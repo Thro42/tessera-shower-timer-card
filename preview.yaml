@@ -1,0 +1,39 @@
+# Synthetic, realistic HA fixtures (not captured live states). Store artwork stays English.
+time_zone: Europe/Berlin
+tiles:
+  - tile: control
+    name: Shower water
+    entity: input_boolean.duschwassert
+    options: { timer: timer.duchwasser_warm, temperature: sensor.boiler_dhw_current_intern_temperature }
+  - tile: control
+    name: Shower water
+    entity: input_boolean.shower_off
+    options: { timer: timer.shower_idle, temperature: sensor.boiler_dhw_current_intern_temperature }
+    sizes: [1x1, 2x1]
+  - tile: control
+    name: Shower paused
+    entity: input_boolean.duschwassert
+    options: { timer: timer.shower_paused, temperature: sensor.boiler_dhw_current_intern_temperature }
+    sizes: [1x1, 2x1]
+  - tile: control
+    name: Shower offline
+    entity: input_boolean.shower_unknown
+    options: { timer: timer.shower_unknown, temperature: sensor.temperature_unknown }
+    sizes: [1x1, 2x1]
+  - tile: control
+    name: Shower setup
+    sizes: [1x1, 2x1]
+states:
+  input_boolean.duschwassert: { state: 'on', attributes: { friendly_name: Shower water } }
+  input_boolean.shower_off: { state: 'off' }
+  input_boolean.shower_unknown: { state: unavailable }
+  timer.duchwasser_warm:
+    state: active
+    attributes: { duration: '1:00:00', remaining: '1:00:00', finishes_at: '{now+42m}' }
+  timer.shower_idle: { state: idle, attributes: { duration: '1:00:00' } }
+  timer.shower_paused: { state: paused, attributes: { duration: '1:00:00', remaining: '0:23:45' } }
+  timer.shower_unknown: { state: unavailable }
+  sensor.boiler_dhw_current_intern_temperature:
+    state: '40.5'
+    attributes: { unit_of_measurement: '°C', device_class: temperature }
+  sensor.temperature_unknown: { state: unavailable }

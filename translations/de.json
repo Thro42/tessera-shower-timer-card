@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "name": "Deutsch"
+  },
+  "screen": {
+    "title": "Duschwasser",
+    "title_short": "Dusche",
+    "on": "AN",
+    "off": "AUS",
+    "choose_switch": "Schalter wählen",
+    "setup": "Einrichten",
+    "decimal_separator": ","
+  },
+  "app": {
+    "name": "Duschwasser-Timer Card",
+    "summary": "Duschwasser-Aufheizung mit Live-Restzeit und Boilertemperatur steuern.",
+    "tile_name": "Duschwasser",
+    "tile_example": "AN · 42:30 · 40,5°",
+    "timer": "Duschwasser-Timer",
+    "timer_hint": "Wähle den Timer, den deine Heizungsautomation startet und stoppt.",
+    "temperature": "Boilertemperatur",
+    "temperature_hint": "Wähle einen Temperatursensor in °C, °F oder K. Der Wert wird nicht umgerechnet."
+  }
+}

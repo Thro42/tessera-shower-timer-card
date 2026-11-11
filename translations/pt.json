@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "name": "Português"
+  },
+  "screen": {
+    "title": "Água do duche",
+    "title_short": "Duche",
+    "on": "LIG.",
+    "off": "DESL.",
+    "choose_switch": "Escolher botão",
+    "setup": "Configurar",
+    "decimal_separator": ","
+  },
+  "app": {
+    "name": "Cartão do temporizador do duche",
+    "summary": "Controle o aquecimento da água do duche com contagem decrescente e temperatura do depósito.",
+    "tile_name": "Água do duche",
+    "tile_example": "LIG. · 42:30 · 40,5°",
+    "timer": "Temporizador do duche",
+    "timer_hint": "Escolha o temporizador iniciado e parado pela automação de aquecimento.",
+    "temperature": "Temperatura do depósito",
+    "temperature_hint": "Escolha um sensor de temperatura em °C, °F ou K. O valor é apresentado sem conversão."
+  }
+}

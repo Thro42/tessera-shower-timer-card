@@ -1,0 +1,37 @@
+id: shower_timer
+version: 0.1.0
+api: "0.15"
+icon: shower
+maintainer: Thro42
+license: MIT
+stage: beta
+topics: [home, time]
+requires:
+  esphome: 2026.6.2
+boards: any
+flash_kb: 8
+attributes: [ai-developed]
+permissions:
+  home_assistant_actions: [input_boolean.toggle]
+tiles:
+  - id: control
+    name: tile_name
+    icon: shower
+    sizes: { min: 1x1, max: 3x2 }
+    memory: 1000
+    domains: [input_boolean]
+    example: tile_example
+    preview: { title: "{name}", value: "{state}" }
+    options:
+      - id: timer
+        kind: entity
+        domains: [timer]
+        attributes: [finishes_at, remaining, duration]
+        label: timer
+        hint: timer_hint
+      - id: temperature
+        kind: entity
+        domains: [sensor]
+        attributes: [unit_of_measurement]
+        label: temperature
+        hint: temperature_hint

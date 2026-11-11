@@ -66,3 +66,8 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Tessera local bench and Python caches
+.preview/
+__pycache__/
+*.pyc

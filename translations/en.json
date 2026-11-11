@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "name": "English"
+  },
+  "screen": {
+    "title": "Shower water",
+    "title_short": "Shower",
+    "on": "ON",
+    "off": "OFF",
+    "choose_switch": "Choose switch",
+    "setup": "Set up",
+    "decimal_separator": "."
+  },
+  "app": {
+    "name": "Shower Timer Card",
+    "summary": "Control shower-water heating with a live countdown and boiler temperature.",
+    "tile_name": "Shower water",
+    "tile_example": "ON · 42:30 · 40.5°",
+    "timer": "Shower-water timer",
+    "timer_hint": "Choose the timer started and stopped by your heating automation.",
+    "temperature": "Boiler temperature",
+    "temperature_hint": "Choose a temperature sensor in °C, °F or K. The value is shown without conversion."
+  }
+}

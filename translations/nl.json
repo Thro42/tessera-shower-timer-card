@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "name": "Nederlands"
+  },
+  "screen": {
+    "title": "Douchewater",
+    "title_short": "Douche",
+    "on": "AAN",
+    "off": "UIT",
+    "choose_switch": "Kies schakelaar",
+    "setup": "Instellen",
+    "decimal_separator": ","
+  },
+  "app": {
+    "name": "Douchewater-timerkaart",
+    "summary": "Bedien de douchewaterverwarming met een live afteltimer en boilertemperatuur.",
+    "tile_name": "Douchewater",
+    "tile_example": "AAN · 42:30 · 40,5°",
+    "timer": "Douchewater-timer",
+    "timer_hint": "Kies de timer die door je verwarmingsautomatisering wordt gestart en gestopt.",
+    "temperature": "Boilertemperatuur",
+    "temperature_hint": "Kies een temperatuursensor in °C, °F of K. De waarde wordt niet omgerekend."
+  }
+}
